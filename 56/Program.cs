@@ -28,6 +28,7 @@ void sumrows (int [,] matrix)
     int min = 0;
     int minSum = 0;
     int [] mass = new int [rows];
+Console.WriteLine();
 for (int i = 0; i < rows; i++)
 {
 for (int j = 0; j < colums; j++)
