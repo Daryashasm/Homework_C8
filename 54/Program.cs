@@ -1,6 +1,7 @@
-﻿int rows = new Random().Next(1,10);
-int colums = new Random().Next(1,10);
+﻿int rows = new Random().Next(2,10);
+int colums = new Random().Next(2,10);
 int [,] matrix = new int [rows,colums];
+Console.WriteLine("Ваш массив:");
 for (int i = 0; i < rows; i++)
 {
 for (int j = 0; j < colums; j++)
@@ -29,6 +30,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
         }
     }
 }
+Console.WriteLine("Ваш массив после упорядочивания по убыванию:");
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
     for (int j = 0; j < matrix.GetLength(1); j++)
