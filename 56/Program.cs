@@ -1,11 +1,14 @@
-﻿//Напишите программу, которая будет находить строку с наименьшей суммой элементов.
-Console.WriteLine("Задайте размерность прямоугольного массива m х n");
-Console.Write("Введите m = ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите n = ");
-int n = Convert.ToInt32(Console.ReadLine());
-int rows = m;
-int colums = n;
+﻿Console.WriteLine("Задайте размерность прямоугольного массива rows x colums");
+Console.Write("Введите rows = ");
+int rows = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите colums = ");
+int colums = Convert.ToInt32(Console.ReadLine());
+if (rows == colums)
+{
+   Console.WriteLine("Вы задали не прямоугольный массив"); 
+}
+else
+{
 int [,] matrix = new int [rows,colums];
 Console.WriteLine("Ваш массив:");
 for (int i = 0; i < rows; i++)
@@ -47,6 +50,7 @@ Console.WriteLine();
 Console.WriteLine($"Наименьшая сумма элементов находится на {minSum} строке и равна {min}");
 }
 Console.WriteLine();
+}
 
 
 
