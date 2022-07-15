@@ -1,14 +1,14 @@
-﻿int rows = new Random().Next(1,5);
-int colums = new Random().Next(1,5);
-int faces = new Random().Next(1,5);
+﻿int x = new Random().Next(1,5);
+int y = new Random().Next(1,5);
+int z = new Random().Next(1,5);
 int [] repeats = new int [100];
-int [,,] matrix = new int [rows,colums,faces];
+int [,,] matrix = new int [x,y,z];
 Console.WriteLine("Исходный трехмерный массив:");
-for (int i = 0; i < rows; i++)
+for (int i = 0; i < x; i++)
 {
-    for (int j = 0; j < colums; j++)
+    for (int j = 0; j < y; j++)
     {
-        for (int k = 0; k < faces; k++)
+        for (int k = 0; k < z; k++)
         {
         matrix[i,j,k] = new Random().Next(10,99);
         repeats[matrix[i,j,k]] = repeats[matrix[i,j,k]] + 1;
